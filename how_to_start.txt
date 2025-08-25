@@ -1,0 +1,14 @@
+# 1) подготви venv
+python -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+
+# 2) стартирай сървъра
+!!!!!---> Трябва да сте в папката на проекта <---!!!!!
+python server.py
+
+# 3) в друг терминал пусни клиента
+!!!!!---> Трябва да сте в папката на проекта <---!!!!!
+python client.py --make bmw --min_price 3000 --limit 15 --images_dir imgs
+
+
